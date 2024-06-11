@@ -1,0 +1,28 @@
+*{
+    text-align: center;
+    font-family: monospace;
+    margin: auto;
+}
+
+.classHeader{
+    text-align: center;
+    color: crimson;
+    font-size: 45px;
+    margin: auto;
+}
+
+.myTable{
+    width: 100%;
+}
+
+.secondHeader{
+    text-align: center;
+    color: crimson;
+    font-size: 45px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.tableTwo{
+    width: 100%;
+}

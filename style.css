@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgb(0, 0, 0);
+    backdrop-filter:blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+}
+
+.logo:hover{
+    color: crimson;
+    text-shadow: 0 0 25px crimson;
+    transform: scale(1.1);
+}
+
+.menu {
+    display: none;
+}
+
+.navbar a{
+    font-size: 18px;
+    color:white;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease; 
+    padding: 15px;
+    /* font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic; */
+}
+
+.navbar a:hover{
+    color: crimson;
+    border-bottom: 3px solid crimson;
+}
+
+
+#home{
+    width: 100%;
+    min-height: 100vh;
+    background:rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+
+.home-content{
+    max-width: 850px;
+    padding: 90px;  
+}
+
+.home-content h3{
+    font-size: 42px;
+}
+
+.home-content h1{
+    font-size: 55px;
+    line-height: 1.2;
+}
+
+.home-content h1:hover{
+    color: black;
+}
+span{
+    color: crimson;
+}
+
+
+.home-content h2{
+    font-size: 35px;
+    line-height: 1.2;
+}
+
+.home-content p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+
+.btn-box{
+    margin-left: 15%;
+    padding-top: 15px;
+    width: 345px;
+    display: flex;
+    gap: 3em; 
+}
+
+.btn-1{
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-1:hover{
+    background-color: crimson;
+    box-shadow: 0 0 8px crimson;
+    color: white;
+}
+
+.btn-2 {
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-2:hover{
+    background-color: crimson;
+    box-shadow: 0 0 8px crimson;
+    color: white;
+}
+
+
+.img-box {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-start; 
+    margin-top: -450px; 
+    margin-right: 15%; 
+}
+
+.img-box img {
+    border-radius: 25%;
+    max-width: 100%; 
+    height: auto;
+}
+
+#MisandVis {
+    background-color: black;
+    color: white;
+    margin: auto;
+    margin-top: 110px;
+    padding-bottom: 70px;
+}
+
+.Mis {
+    color: crimson;
+    font-size: 55px;
+    text-align: center;
+    padding: 35px;
+}
+
+.Mis:hover{
+    color: crimson;
+    text-shadow: 0 0 25px crimson;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.paraMis {
+    text-align: center;
+    font-size: 35px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-right: 70px;
+    padding-left: 70px;
+    
+}
+
+.Vis {
+    color: crimson;
+    font-size: 55px;
+    text-align: center;
+    padding: 35px;
+}
+
+.Vis:hover{
+    color: crimson;
+    text-shadow: 0 0 25px crimson;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.paraVis {
+    text-align: center;
+    font-size: 35px;
+    text-align: center;
+    font-size: 35px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#MyActs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-decoration: none;
+    background-color: #000;
+}
+
+.container {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container .box {
+    position: relative;
+    width: 275px;
+    height: 275px;
+    overflow: hidden;
+    transition: 0.5s;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .box:hover {
+    z-index: 1;
+    transform: scale(1.25);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.container .box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container .box .imgBx::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(18deg, rgb(111, 92, 92), #000);
+    backdrop-filter: blur(1px);
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .box:hover .imgBx::before {
+    opacity: 1;
+}
+
+.container .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+}
+
+.container .box .content h2 {
+    color: #ffffff;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 20px;
+    transform: translateY(200px);
+}
+
+.container .box:hover .content h2 {
+    transform: translateY(0);
+}
+
+footer {
+    background-color: black;
+}
+
+.footerContainer {
+    background-color: black;
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: white;
+    transition: 0,5s;
+}
+
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul Li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
